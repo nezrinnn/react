@@ -13,6 +13,7 @@ const Search = () => {
       .then((res) => res.json())
       .then((a) => {
         setText(a.Search);
+        
       });
   }, []);
 
