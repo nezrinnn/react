@@ -1,57 +1,94 @@
 
-.add,
-.details {
-  margin-top: 10px;
-  padding: 8px 12px;
-  background-color: #3498db;
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  margin-right: 5px;
-  cursor: pointer;
-  border-radius: 4px;
+.searchBox {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
 }
-.details{
-    margin-left: 320px;
-}
- 
-.div button {
-  display: inline-block;
-}
-
-button{
-    background-color: pink;
-}
-.list {
-    position: fixed; 
-    top: 20px; 
-    right:20px;
-    width: 50%;
-
-    margin-top: 88px;
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
   }
   
-.list {
-    display: flex;
-    border: 1px solid black;
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
-    position: absolute;
-}
-.searchbox{
-    display: flex;
-}
-.film{
-    position: relative;
-}
-.div{
-    background-color: antiquewhite;
+  .div {
     width: 30%;
-}
-.add{
-    margin: 25px;
-}
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid rgb(29, 28, 28);
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .div p {
+    margin-bottom: 10px;
+  }
+  
+  .div img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .add,
+  .details {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .details {
+    background-color: #008CBA;
+  }
+  
+  .list {
+    margin-top: 40px;
+  }
+  
+  .list input[type='text'],
+  .list button {
+    padding: 8px 15px;
+    margin-right: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .list button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .list h3 {
+    margin-top: 20px;
+  }
+  
+  .list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .list ul li {
+    margin-bottom: 5px;
+  }
+  
+  /* Responsivlik*/
+  @media screen and (max-width: 768px) {
+    .div {
+      width: 45%; 
+    }
+  }
+  
